@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D20875C2645345A00959CF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20875B2645345A00959CF9 /* Store.swift */; };
+		8D2087672645347100959CF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20875B2645345A00959CF9 /* Store.swift */; };
+		8D20876F2645350E00959CF9 /* StoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20876E2645350E00959CF9 /* StoreSpecs.swift */; };
+		8D2087892645382200959CF9 /* MathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCB3126445296009180E5 /* MathController.swift */; };
+		8D2087932645393B00959CF9 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D20875B2645345A00959CF9 /* Store.swift */; };
 		8DADCB2E26445296009180E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCB2D26445296009180E5 /* AppDelegate.swift */; };
-		8DADCB3026445296009180E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCB2F26445296009180E5 /* SceneDelegate.swift */; };
-		8DADCB3226445296009180E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCB3126445296009180E5 /* ViewController.swift */; };
+		8DADCB3226445296009180E5 /* MathController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCB3126445296009180E5 /* MathController.swift */; };
 		8DADCB3526445296009180E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCB3326445296009180E5 /* Main.storyboard */; };
 		8DADCB372644529A009180E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCB362644529A009180E5 /* Assets.xcassets */; };
 		8DADCB3A2644529A009180E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCB382644529A009180E5 /* LaunchScreen.storyboard */; };
-		8DADCB452644529A009180E5 /* CombineReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCB442644529A009180E5 /* CombineReduxTests.swift */; };
 		8DADCB502644529A009180E5 /* CombineReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCB4F2644529A009180E5 /* CombineReduxUITests.swift */; };
+		8DADCB632644FEE3009180E5 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8DADCB622644FEE3009180E5 /* ReSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D20875B2645345A00959CF9 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		8D20876E2645350E00959CF9 /* StoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSpecs.swift; sourceTree = "<group>"; };
 		8DADCB2A26445296009180E5 /* CombineRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DADCB2D26445296009180E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DADCB2F26445296009180E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DADCB3126445296009180E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DADCB3126445296009180E5 /* MathController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathController.swift; sourceTree = "<group>"; };
 		8DADCB3426445296009180E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DADCB362644529A009180E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DADCB392644529A009180E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DADCB3B2644529A009180E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DADCB402644529A009180E5 /* CombineReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DADCB442644529A009180E5 /* CombineReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineReduxTests.swift; sourceTree = "<group>"; };
 		8DADCB462644529A009180E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DADCB4B2644529A009180E5 /* CombineReduxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineReduxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DADCB4F2644529A009180E5 /* CombineReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineReduxUITests.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DADCB632644FEE3009180E5 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				8DADCB2D26445296009180E5 /* AppDelegate.swift */,
-				8DADCB2F26445296009180E5 /* SceneDelegate.swift */,
-				8DADCB3126445296009180E5 /* ViewController.swift */,
+				8DADCB3126445296009180E5 /* MathController.swift */,
 				8DADCB3326445296009180E5 /* Main.storyboard */,
 				8DADCB362644529A009180E5 /* Assets.xcassets */,
 				8DADCB382644529A009180E5 /* LaunchScreen.storyboard */,
 				8DADCB3B2644529A009180E5 /* Info.plist */,
+				8D20875B2645345A00959CF9 /* Store.swift */,
 			);
 			path = CombineRedux;
 			sourceTree = "<group>";
@@ -113,8 +118,8 @@
 		8DADCB432644529A009180E5 /* CombineReduxTests */ = {
 			isa = PBXGroup;
 			children = (
-				8DADCB442644529A009180E5 /* CombineReduxTests.swift */,
 				8DADCB462644529A009180E5 /* Info.plist */,
+				8D20876E2645350E00959CF9 /* StoreSpecs.swift */,
 			);
 			path = CombineReduxTests;
 			sourceTree = "<group>";
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = CombineRedux;
+			packageProductDependencies = (
+				8DADCB622644FEE3009180E5 /* ReSwift */,
+			);
 			productName = CombineRedux;
 			productReference = 8DADCB2A26445296009180E5 /* CombineRedux.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 8DADCB2126445296009180E5;
+			packageReferences = (
+				8DADCB612644FEE3009180E5 /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = 8DADCB2B26445296009180E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DADCB3226445296009180E5 /* ViewController.swift in Sources */,
+				8DADCB3226445296009180E5 /* MathController.swift in Sources */,
 				8DADCB2E26445296009180E5 /* AppDelegate.swift in Sources */,
-				8DADCB3026445296009180E5 /* SceneDelegate.swift in Sources */,
+				8D20875C2645345A00959CF9 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DADCB452644529A009180E5 /* CombineReduxTests.swift in Sources */,
+				8D20876F2645350E00959CF9 /* StoreSpecs.swift in Sources */,
+				8D2087892645382200959CF9 /* MathController.swift in Sources */,
+				8D2087672645347100959CF9 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DADCB502644529A009180E5 /* CombineReduxUITests.swift in Sources */,
+				8D2087932645393B00959CF9 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +607,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8DADCB612644FEE3009180E5 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8DADCB622644FEE3009180E5 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DADCB612644FEE3009180E5 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DADCB2226445296009180E5 /* Project object */;
 }

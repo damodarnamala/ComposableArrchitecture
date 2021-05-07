@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CombineReduxTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8DADCB2926445296009180E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DADCB3F2644529A009180E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DADCB4A2644529A009180E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
