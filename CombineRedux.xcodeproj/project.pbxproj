@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,6 @@
 		8DADCB372644529A009180E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCB362644529A009180E5 /* Assets.xcassets */; };
 		8DADCB3A2644529A009180E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DADCB382644529A009180E5 /* LaunchScreen.storyboard */; };
 		8DADCB502644529A009180E5 /* CombineReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DADCB4F2644529A009180E5 /* CombineReduxUITests.swift */; };
-		8DADCB632644FEE3009180E5 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8DADCB622644FEE3009180E5 /* ReSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DADCB632644FEE3009180E5 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +148,6 @@
 			);
 			name = CombineRedux;
 			packageProductDependencies = (
-				8DADCB622644FEE3009180E5 /* ReSwift */,
 			);
 			productName = CombineRedux;
 			productReference = 8DADCB2A26445296009180E5 /* CombineRedux.app */;
@@ -224,7 +221,6 @@
 			);
 			mainGroup = 8DADCB2126445296009180E5;
 			packageReferences = (
-				8DADCB612644FEE3009180E5 /* XCRemoteSwiftPackageReference "ReSwift" */,
 			);
 			productRefGroup = 8DADCB2B26445296009180E5 /* Products */;
 			projectDirPath = "";
@@ -607,25 +603,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		8DADCB612644FEE3009180E5 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		8DADCB622644FEE3009180E5 /* ReSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8DADCB612644FEE3009180E5 /* XCRemoteSwiftPackageReference "ReSwift" */;
-			productName = ReSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8DADCB2226445296009180E5 /* Project object */;
 }

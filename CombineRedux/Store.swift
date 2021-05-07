@@ -7,17 +7,17 @@
 
 import Foundation
 
-public let store = Store<MathAction,MathState>(state: MathState(), reducer: appReducer)
+let store = Store<MathAction,MathState>(state: MathState(), reducer: appReducer)
+let postsStore = PostStore<PostsActions,PostState>(state: PostState(posts: []), reducer: postsReducer)
 
-public struct MathState {
+struct MathState {
     var number = 0
 }
 
-public enum MathAction {
+enum MathAction {
     case plus(Int)
     case minus(Int)
 }
-
 
 typealias Reducer<State, Action> = (inout State, Action) -> State
 
@@ -32,7 +32,7 @@ func appReducer(state: inout MathState,
     return state
 }
 
-public class Store<Action,State> {
+class Store<Action,State> {
     var reducer: Reducer<MathState, MathAction>
     var state: MathState
 
@@ -42,7 +42,56 @@ public class Store<Action,State> {
     }
 
     func send(action: MathAction) -> MathState {
+        self.state =  self.reducer(&state, action)
+        return state
+    }
+}
+
+struct Post {
+    var id: Int
+    var userID: Int
+    var body: String
+    var title: String
+}
+
+struct PostState {
+    var posts: [Post] = []
+}
+
+struct PostService {
+    func all() -> PostState {
+        return PostState(posts: [Post(id: 1,
+                                      userID: 1,
+                                      body: "Sample body",
+                                      title: "First")])
+    }
+}
+
+enum PostsActions {
+    case all
+}
+
+public class PostStore<Action,State> {
+    var reducer: Reducer<PostState, PostsActions>
+    var state: PostState
+
+    init(state: PostState, reducer: @escaping Reducer<PostState, PostsActions>) {
+        self.reducer = reducer
+        self.state = state
+    }
+
+    func send(action: PostsActions) -> PostState {
         return  self.reducer(&state, action)
     }
+}
+
+func postsReducer(state: inout PostState,
+                  action: PostsActions) -> PostState {
+    switch action {
+    case .all:
+        let service = PostService()
+        state = service.all()
+    }
+    return state
 }
 
